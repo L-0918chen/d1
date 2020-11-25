@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/logIn.css">
+</head>
+
+<body>
+    <!-- head -->
+    <div id="head">
+        <a href="./index.html">
+            <img src="./imgs/DDlogoNEW.gif" alt="小白读书网">
+        </a>
+        <div>
+            <a href="#">“登录页面“改进建议</a>
+        </div>
+    </div>
+
+    <!-- item -->
+    <div id="item">
+        <div class="item-con">
+            <img src="./imgs/202009141322166223.png" alt="">
+            <div class="login">
+                <h3>密码登录</h3>
+                <div class="ipt1">
+                    <input type="text" placeholder="请输入手机号码" id="user">
+                    <span></span>
+                </div>
+                <div class="ipt2">
+                    <input type="password" placeholder="密码" id="password">
+                    <span></span>
+                </div>
+                <div class="verificat">
+                    <input type="text" style="width: 160px; margin-right: 5px; text-indent:15px" id="code"
+                        placeholder="验证码">
+                    <div class="verification" id="yanzheng">
+                    </div>
+                </div>
+                <a href="#">忘记密码?</a>
+                <a href="./reg.html">立即注册</a>
+                <button id="btn">登录</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/BXWquery.js"></script>
+    <script type="module">
+        import Utils from "./js/Utils.js"
+        import Ajax from "./js/Ajax.js"
+
+
+        var user, password, code, btn, verification, yanzheng;
+        init();
+        function init() {
+            user = document.querySelector("#user");
+            password = document.querySelector("#password");
+            code = document.querySelector("#code");
+            btn = document.querySelector("#btn");
+            yanzheng = document.querySelector("#yanzheng")
+            btn.addEventListener("click", clickHandler);
+            yanzheng.addEventListener("click", clickHandler1)
+            random();
+        }
+
+        function clickHandler1(e) {
+            $(".span").remove();
+            random();
+        }
+
+        function clickHandler(e) {
+            var user_value = user.value;
+            var password_value = password.value;
+            var code_value = code.value;
+            console.log(typeof user_value,typeof password_value)
+            var data = "";
+            if (user_value && password_value && code_value) {
+                console.log(verification, code_value)
+                if (code_value !== verification) {
+                    alert("验证码输入错误");
+                    clickHandler1();
+                } else {
+                    data = {user:user_value,password:password_value}
+                    document.addEventListener("login",loginHandler)
+                    Ajax.post("http://192.168.43.155:4001/login", data)
+                }
+            } else {
+                alert("有内容未填写");
+                clickHandler1();
+            }
+        }
+        function loginHandler(e) {
+            console.log(e.data.bool)
+            var bool = e.data.bool
+            console.log(bool)
+            if (bool) {
+                location = "./index.html"
+            } else {
+                alert("输入手机号或密码有误");
+                clickHandler1();
+            }
+        }
+
+        //随机数
+        function random() {
+            verification = "";
+            for (var i = 0; i < 4; i++) {
+                // 随机数
+                var ran = (parseInt(Math.random() * 36)).toString(36);
+                verification += ran;
+                // 获取随机角度;
+                var random_deg = parseInt(30 * Math.random());
+                random_deg = Math.random() > 0.5 ? -random_deg : random_deg;
+                var span = document.createElement("span");
+                $(span).css({
+                    transform: "rotate(" + random_deg + "deg)",
+                    color: Utils.ranColor(),
+                    width: "30px",
+                    height: "37px",
+                    display: "inline-block",
+                    fontSize: "30px"
+                });
+                $(span).addClass("span");
+                Utils.ce("span", {
+                    transform: "rotate(" + random_deg + "deg)",
+                    color: Utils.ranColor(),
+                    width: "30px",
+                    height: "37px",
+                    display: "inline-block",
+                    fontSize: "30px"
+                })
+                span.innerHTML = ran;
+                yanzheng.appendChild(span);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小白买书网</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/reg.css">
+</head>
+
+<body>
+    <!-- head -->
+    <div id="head">
+        <div class="head-con">
+            <div class="head-left">
+                <a href="#">回到首页<img src="" alt=""></a>
+            </div>
+            <div class="head-right">
+                <ul class="ul1">
+                    <li><a href="#" style="border-left:none;">购物车</a></li>
+                    <li><a href="#" style="text-decoration: none;">我的订单</a></li>
+                    <li><a href="#" style="text-decoration: none;">我的当当</a>
+                        <ul class="ul2">
+                            <li><a href="#">我的订单</a></li>
+                            <li><a href="#">购物礼券</a></li>
+                            <li><a href="#">我的积分</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="#">我的评论</a></li>
+                            <li><a href="#">数字商店</a></li>
+                        </ul>
+
+                    </li>
+                    <li style="width: 61px;text-align: center;"><a href="#">礼品卡</a>
+                        <ul class="ul2">
+                            <li><a href="#">购买</a></li>
+                            <li><a href="#">激活</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">手机当当</a></li>
+                    <li><a href="#">企业销售</a></li>
+                    <li><a href="#">帮助</a></li>
+                </ul>
+                <br>
+                <p>
+                    欢迎光临当当网，请<a href="./logIn.html">登录</a>
+                    <a href="#">免费注册</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- reg -->
+    <div class="con">
+        <div class="head">
+            <span>
+                <a href="./index.html">当当首页</a>
+                <a href="">注册帮助</a>
+            </span>
+            <a href="#" class="reg">新用户注册</a>
+        </div>
+        <div class="body">
+            <div class="tips">
+                <div>
+                    贴心提示：请勿设置与邮箱密码相同的账户登录密码或支付密码，防止不法分子窃取您的当当账户信息，
+                    <a href="http://blog.dangdang.com/?p=22276">谨防诈骗！</a>
+                </div>
+            </div>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="text">用户名</td>
+                    <td class="td">
+                        <input type="text" placeholder="请输入您的用户名" id="user">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text">手机号码</td>
+                    <td class="td">
+                        <input type="text" placeholder="请输入您的手机号码" id="phone">
+                        <span>手机号可用于登录、找回密码、接收订单通知等服务</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text">登录密码</td>
+                    <td class="td">
+                        <input type="password" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text">确认密码</td>
+                    <td class="td">
+                        <input type="password" id="confirm">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text">验证码</td>
+                    <td class="td">
+                        <input type="text" style="width: 160px; margin-right: 5px;" id="code">
+                        <div class="verification" id="yanzheng">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <p class="clause">
+                <input type="checkbox" style="width: 12px;height: 12px;" class="check">
+                我已阅读并同意
+                <a href="">《小白交易条款》</a>
+                <a href="">《小白霸道条款》</a>
+                和
+                <a href="#">《概不负责政策》</a>
+            </p>
+            <button id="btn">立即注册</button>
+        </div>
+    </div>
+
+    <div id="bottom">
+    </div>
+    <script src="./js/BXWquery.js"></script>
+    <script type="module">
+        import  Ajax from "./js/Ajax.js"
+        var phone, password, confirm, yanzheng, code, btn, check,user;
+        var verification = "";
+        init();
+        random();
+
+        function init() {
+            user = document.querySelector("#user");
+            phone = document.querySelector("#phone");
+            password = document.querySelector("#password");
+            confirm = document.querySelector("#confirm");
+            yanzheng = document.querySelector("#yanzheng");
+            code = document.querySelector("#code");
+            btn = document.querySelector("#btn");
+            check = document.querySelector(".check");
+            yanzheng.addEventListener("click", yanzhengHandler);
+            btn.addEventListener("click", clickHandler);
+        }
+        function yanzhengHandler(e) {
+            $(".span").remove();
+            random();
+        }
+        function clickHandler(e) {
+            var user_value = user.value;
+            var phone_value = phone.value;
+            var password_value = password.value;
+            var confirm_value = confirm.value;
+            var code_value = code.value;
+            console.log(user_value,phone_value , password_value , confirm_value , code_value)
+            if (user_value&&phone_value && password_value && confirm_value && code_value) {
+                if(/^\d+$/.test(user_value)){
+                    alert("用户名不能为纯数字");
+                    yanzhengHandler();
+                }else if (!(/^\d{11}$/.test(phone_value))) {
+                    alert("请输入正确的手机号")
+                    yanzhengHandler();
+                } else if (password_value !== confirm_value) {
+                    alert("两次密码输入不一致");
+                    yanzhengHandler();
+                } else if (code_value !== verification) {
+                    alert("验证码输入错误");
+                    yanzhengHandler();
+                } else if (!check.checked) {
+                    alert("请阅读条款");
+                    yanzhengHandler();
+                } else {
+                    var data = {
+                        name : user_value,
+                        phone : phone_value,
+                        password : password_value
+                    }
+                    document.addEventListener("reg",regHandler);
+                    console.log(2)
+                    Ajax.post("http://192.168.43.155:4001/reg",data);
+                }
+
+            } else {
+                alert("有内容未填")
+            }
+        }
+        function regHandler(e) {
+            console.log(1)
+            location = "./logIn.html"
+        }
+
+
+        //随机数
+        function random() {
+            var ranNum = "";
+            verification = ""
+            for (var i = 0; i < 4; i++) {
+                // 随机数
+                var ran = (parseInt(Math.random() * 36)).toString(36);
+                verification += ran;
+                // 获取随机角度;
+                var random_deg = parseInt(30 * Math.random());
+                random_deg = Math.random() > 0.5 ? -random_deg : random_deg;
+                // if(yanzheng.ElementChildren){
+
+                // }
+                var span = document.createElement("span");
+                $(span).css({
+                    transform: "rotate(" + random_deg + "deg)",
+                    color: BXWquery.ranColor(),
+                    width: "30px",
+                    height: "37px",
+                    display: "inline-block",
+                    fontSize: "25px"
+                });
+                $(span).addClass("span");
+                span.innerHTML = ran;
+                yanzheng.appendChild(span);
+            }
+        }
+    </script>
+</body>
+
+</html>

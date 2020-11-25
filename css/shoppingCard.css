@@ -1,0 +1,358 @@
+/* head */
+#head{
+    font: 12px 'Hiragino Sans GB',"simsun","Arial";
+    color: #646464;
+    min-width: 960px;
+    background-color: #fff;
+}
+#head .tools{
+    width: 100%;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #f2f2f2;
+    height: 34px;
+    line-height: 34px;
+    z-index: 10010;
+    position: relative;
+}
+#head .tools .tools-con{
+    width: 960px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    height: 34px;
+}
+#head .tools .tools-con ul {
+    float: right;
+    padding-top: 2px;
+}
+#head .tools .tools-con ul li{
+    float: left;
+    height: 22px;
+    padding-top: 4px;
+    line-height: 21px;
+    background: url(http://img32.ddimg.cn/upload_img/00363/header/home_sprite.png) no-repeat left -285px;
+    position: relative;
+    z-index: 100;
+}
+#head .tools .tools-con ul li a{
+    color: #646464;
+    font-size: 12px;
+    display: block;
+    position: relative;
+    line-height: 21px;
+    padding: 0 7px 0 8px;
+}
+#head .tools .tools-con ul .my_dd a{
+    padding-right: 27px;
+    background: url(//img32.ddimg.cn/upload_img/00363/header/home_sprite.png) no-repeat right -307px;
+}
+#head .tools .tools-con ul .zero a{
+    background: url(//img32.ddimg.cn/upload_img/00363/header/home_sprite.png) no-repeat right -307px;
+    padding-right: 23px;
+}
+#head .tools .tools-con ul .card{
+    background-image: none;
+}
+#head .tools .tools-con ul .card i{
+    float: left;
+    width: 15px;
+    height: 14px;
+    background: url(//img32.ddimg.cn/upload_img/00363/header/home_sprite.png) no-repeat -40px -86px;
+    overflow: hidden;
+    margin: 3px 9px 0 0;
+}
+#head .tools .tools-con ul .card b{
+    color: #ff2832;
+    font: bold 12px "Arial";
+}
+
+#head .tools .tools-con ul .phone i{
+    width: 11px;
+    height: 16px;
+    background: url(http://img32.ddimg.cn/upload_img/00363/header/home_sprite.png) no-repeat -40px -70px;
+    position: absolute;
+    left: 11px;
+    top: 2px;
+}
+#head .tools .tools-con ul .phone a{
+    padding: 0 9px 0 27px;
+}
+#head .tools .tools-con ul .user a{
+    background: url(http://img32.ddimg.cn/upload_img/00363/header/home_sprite.png) no-repeat right -307px;
+    padding-right: 23px;
+}
+#head .tools .tools-con div{
+    padding: 5px 0 0 10px;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    float: left;
+    z-index: 50;
+}
+#head .tools .tools-con div span a:nth-of-type(1){
+    color: #ff2832;
+    display: inline-block;
+    margin-right: 4px;
+}
+#head .tools .tools-con div span a:nth-of-type(2){
+    color: #646464;
+    display: inline-block;
+    margin-right: 4px;
+}
+#head .wrapper{
+    width: 960px;
+    margin: 0 auto;
+    padding: 17px 0 0;
+}
+#head .logo{
+    width: 100%;
+    border-bottom: 4px solid #ff2832;
+    height: 100px;
+}
+#head .logo .logo-con{
+    width: 960px;
+    margin: 0 auto;
+}
+#head .logo .logo-con .shop_produce{
+    float: right;
+    width: 634px;
+    height: 36px;
+    background: url(http://shopping.dangdang.com/shoppingcart/images/procedure_bg.png) 0 0 no-repeat;
+    font: bold 14px/36px "Microsoft Yahei";
+    color: #646464;
+    margin: 30px 0 0;
+}
+#head .logo .logo-con .shop_produce span{
+    width: 208px;
+    display: inline-block;
+    text-align: center;
+}
+#head .logo .logo-con .shop_produce .current{
+    color: #fff;
+    width: 206px;
+}
+#head .logo .logo-con .shop-logo{
+    padding: 20px 0 0 15px;
+}
+/* adress */
+#address_line{
+    width: 100%;
+    background-color: #fafafa;
+}
+#address_line .address_con{
+    width: 960px;
+    margin: 0 auto;
+}
+#address_line .address_con .address{
+    height: 22px;
+    line-height: 22px;
+    margin: 15px 0;
+    background-color: #fcfcfc;
+    border: 1px solid #ebebeb;
+    padding: 0 15px;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 12px;
+    color: #969696;
+}
+#address_line .address_con .address .icon{
+    width: 22px;
+    height: 22px;
+    background: url(http://shopping.dangdang.com/shoppingcart/images/icon_sprite.png) 0 5px no-repeat;
+    display: inline-block;
+    margin-right: 5px;
+}
+#address_line .address_con .address div{
+    position: relative;
+    display: inline-block;
+    z-index: 1003;
+    vertical-align: top;
+}
+#address_line .address_con .address div span{
+    color: #646464;
+    border: 1px solid #ebebeb;
+    border-width: 0 1px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 14px 0 5px;
+    background: url(http://shopping.dangdang.com/shoppingcart/images/icon_sprite.png) no-repeat right -53px #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 88;
+    display: block;
+}
+
+/* item */
+#item{
+    width: 960px;
+    margin: 0 auto;
+}
+#item ul{
+    line-height: 36px;
+    height: 36px;
+    margin-top: 10px;
+    color: #969696;
+    font-size: 12px;
+}
+#item ul li{
+    float: left;
+    text-align: center;
+}
+#item ul .li1{
+    text-align: left;
+    width: 202px;
+}
+
+#item ul .li2{
+    text-align: left;
+    width: 280px;
+}
+#item ul .li3{
+    width: 130px;
+    margin-left: 18px;
+}
+#item ul .li4{
+    width: 130px;
+}
+#item ul .li5{
+    width: 70px;
+}
+#item .shoppingList{
+    width: 958px;
+    border: 1px solid #ebebeb;
+    background-color: #fafafa;
+    margin-bottom: 40px;
+}
+#item .shoppingList .item div{
+    height: 82px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 17px;
+    position: relative;
+    line-height: 22px;
+    text-align: center;
+    border-bottom: 1px solid #e4e4e4;
+}
+#item .shoppingList .item .row1{
+    padding: 45px 0 0 10px;
+    width: 42px;
+    vertical-align: middle;
+    border-bottom: none;
+}
+
+#item .shoppingList .item .row2{
+    padding: 20px 20px 20px 0;
+    width: 80px;
+    border-bottom: none;
+    position: relative;
+    z-index: 9;
+    font-size: 0;
+    line-height: 0;
+}
+#item .shoppingList .item .row2 a img{
+    width: 80px;
+    height: 80px;
+}
+#item .shoppingList .item .row3{
+    width: 330px;
+    line-height: 18px;
+    text-align: left;
+    position: relative;
+}
+#item .shoppingList .item .row3 a{
+    color: #323232;
+    font-size: 12px;
+
+}
+#item .shoppingList .item .row4{
+    width: 130px;
+}
+#item .shoppingList .item .row4 span{
+    color: #969696;
+    font-size: 12px;
+}
+#item .shoppingList .item .row5{
+    width: 130px;
+}
+#item .shoppingList .item .row5 span{
+    border: 1px solid #dcdcdc;
+    height: 28px;
+    width: 94px;
+    line-height: 28px;
+    font-size: 14px;
+    margin: 5px auto;
+    overflow: hidden;
+    display: block;
+}
+#item .shoppingList .item .row5 span a{
+    display: block;
+    float: left;
+    height: 28px;
+    width: 28px;
+    background-color: #f4f4f4;
+}
+#item .shoppingList .item .row5 span input{
+    width: 36px;
+    height: 28px;
+    float: left;
+    padding: 0;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    border-width: 0 1px;
+    background-color: #fff;
+    font-weight: bold;
+}
+#item .shoppingList .item .row6{
+    width: 130px;
+}
+#item .shoppingList .item .row6 span{
+    color: #ff2832;
+    font-size: 12px;
+    display: block;
+}
+#item .shoppingList .item .row7{
+    width: 56px;
+}
+#item .shoppingList .item .row7 a{
+    color: #323232;
+    font-size: 12px;
+}
+
+/* settlement */
+#settlement{
+    width: 960px;
+    height: 72px;
+    z-index: 10;
+    margin: 20px auto;
+    padding: 0 62px;
+    position: relative;
+}
+#settlement .settlement{
+    float: right;
+    margin: 18px 0 0;
+    width: 530px;
+    position: relative;
+}
+#settlement .settlement a{
+    cursor: pointer;
+    float: right;
+    display: block;
+    width: 116px;
+    height: 38px;
+    font: bold 18px/38px "Microsoft Yahei";
+    color: #fff;
+    background-color: #ff2832;
+    border-radius: 2px;
+    text-align: center;
+    margin-top: 4px;
+}
+#settlement .settlement .subtotal{
+    padding-right: 30px;
+    line-height: 24px;
+    float: right;
+}
+#settlement .settlement .subtotal p{
+    padding-top: 10px;
+}
+#settlement .settlement .subtotal p .price{
+    color: red;
+}

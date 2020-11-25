@@ -1,0 +1,216 @@
+body{
+    background-color: #efefff;
+    font-size: 12px;
+}
+/* head */
+#head{
+    height: 71px;
+    padding-top: 2px;
+    font: 12px/18px "\5b8b\4f53",Arial,Helvetica,sans-serif;;
+}
+.head-con{
+    width: 960px;
+    height: 71px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-bottom: 3px solid #f07700;
+}
+.head-con .head-left{
+    float: left;
+}
+.head-con .head-right{
+    float: right;
+}
+.head-con .head-right .ul1{
+    float: right;
+    padding-top: 2px;
+}
+.head-con .head-right .ul1>li{
+    float: left;
+    height: 21px;
+
+    position: relative;
+}
+.head-con .head-right .ul1>li>a{
+    color: #404040;
+    padding: 1px 6px 0;
+    height: 19px;
+    border-left: 1px solid #444;
+    overflow: hidden;
+}
+.head-con .head-right .ul1>li:hover>a{
+    text-decoration: underline;
+    color: orange;
+}
+
+.head-con .head-right .ul2{
+    float: none;
+    width: 58px;
+    border: 1px solid #ee7304;
+    border-top: none;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    background-color: white ;
+}
+.head-con .head-right .ul2 li{
+    padding-top: 5px;
+}
+.head-con .head-right .ul2 a{
+    color: #404040;
+    height: 19px;
+    font-size: 12px;
+    overflow: hidden;
+}
+.head-con .head-right .ul1>li:hover .ul2{
+    display: block;
+}
+.head-con .head-right p{
+    float: right;
+    padding: 2px 10px 0 0;
+}
+
+/* form */
+#form{
+    border: 0;
+    margin-bottom: 45px;
+}
+.con{
+    margin: 0 auto;
+    width: 950px;
+    margin-top: 40px;
+    margin-bottom: 45px;
+    background-color: #fff;
+}
+.con .head{
+    height: 74px;
+    border-bottom: solid 1px #eceef2;
+    padding-right: 15px;
+    margin: 0 10px;
+}
+.con .head span{
+    float: right;
+    margin-top: 40px;
+}
+.con .head span a{
+    color: #646464;
+    line-height: 22px;
+    font-size: 12px;
+}
+.con .head span a:nth-child(1){
+    padding-left: 16px;
+    margin-right: 15px;
+}
+.con .head .reg{
+    top: 28px;
+    border-bottom: none;
+    width: 135px;
+    height: 46px;
+    background-color: #f5f5f5;
+    display: inline-block;
+    position: relative;
+    left: 20px;
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+    color: #464646;
+    margin-left: 6px;
+}
+.con .body{
+    padding: 45px 0 25px;
+    position: relative;
+}
+.con .body .tips{
+    line-height: 24px;
+    color: #828282;
+    padding-left: 22px;
+    width: 670px;
+    border: 1px solid #fedbd1;
+    margin: -30px auto 30px;
+}
+.con .body .tips div a{
+    line-height: 24px;
+}
+.con .body table{
+    width: 424px;
+    margin: 0 auto;
+    background-color: white;
+}
+.con .body table .text{
+    font-size: 14px;
+    width: 338px;
+    padding-right: 10px;
+    text-align: right;
+    vertical-align: top;
+    color: #646464;
+    padding-top: 8px;
+    font-family: 'Microsoft YaHei';
+}
+.con .body table .td{
+    padding: 0 0 30px;
+    position: relative;
+}
+.con .body table input{
+    border: 1px solid #e6e6e6;
+    font-family: 'Microsoft YaHei';
+    height: 18px;
+    float: left;
+    width: 290px;
+    margin-right: 10px;
+    padding: 9px 10px;
+    line-height: 18px;
+    outline: 0 none;
+    border-radius: 2px;
+    color: #333;
+}
+.con .body table tr td>span{
+    color: #787878;
+    display: block;
+    line-height: 14px;
+    padding: 0 4px;
+    margin-right: 5px;
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+}
+.con .body table .verification{
+    width: 120px;
+    height: 37px;
+    float: left;
+    border: 1px solid #000;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    cursor: pointer;
+}
+.con .body .clause{
+    margin: 0 auto;
+    clear: both;
+    width: 424px;
+}
+.con .body button{
+    width: 178px;
+    height: 44px;
+    line-height: 44px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #ff2832;
+    color: #fff;
+    border-radius: 22px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+/* bottom */
+#bottom{
+    color: #8c8c8c;
+    font-size: 12px;
+    text-decoration: none;
+    border-top: 1px solid #ccceee;
+    width: 100%;
+    min-width: 960px;
+    padding: 17px 0 50px;
+}

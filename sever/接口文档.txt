@@ -1,0 +1,84 @@
+url:http://10.20.159.115:4001;
+type:json
+method:POST
+
+1、注册
+    url:http://10.20.159.115:4001/reg
+    req:{
+        user:"xiaobai",
+        phone:14785496357,
+        password:"asdfg"
+    }
+    res:null;
+2、登录
+    url:http://10.20.159.115:4001/login
+    req:{
+        user:"xiaobai"/phone:14785496357,
+        password:"asdfg"
+    }
+    res:{
+        user:"xiaobai"
+    }
+3、获取商品列表
+    url:http://10.20.159.115:4001/index
+    req:null
+    res:[
+        {...}
+        {...}
+        {...}
+        {...}
+    ]
+4、获取购物车列表
+    url:http://10.20.159.115:4001/shoppingList
+    req:null
+    res:[
+        {...}
+        {...}
+        {...}
+        {...}
+    ]
+5、添加商品
+    url:http://10.20.159.115:4001/addBoodks
+    req:{
+        id:1001,
+        title:....
+    }
+    res:[
+        {...}
+        {...}
+        {...}
+        {...}
+    ]
+6、修改商品数量
+    url:http://10.20.159.115:4001/changeBooksNum
+    req:{
+        id:1001,
+        num:5
+    }
+    res:[
+        {...}
+        {...}
+        {...}
+        {...}
+    ]
+7、删除商品
+    url:http://10.20.159.115:4001/deleteBooks
+    req: [1001]
+    res:[
+        {...}
+        {...}
+        {...}
+        {...}
+    ]
+8、选择商品
+url:http://10.20.159.115:4001/selectBoods
+    req:{
+        id:1001,
+        checked:true
+    }
+    res:[
+        {...}
+        {...}
+        {...}
+        {...}
+    ]

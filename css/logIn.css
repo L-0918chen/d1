@@ -1,0 +1,107 @@
+/* head */
+#head{
+    margin: 12px auto 14px;
+    width: 1200px;
+    height: 74px;
+}
+#head img{
+    float: left;
+    border: none;
+    width: 285px;
+    height: 60px;
+}
+#head div{
+    float: right;
+    margin-top: 34px;
+}
+#head div a{
+    color: #787878;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* item */
+#item{
+    height: 590px;
+    border-bottom: 1px solid #ccc;
+}
+.item-con{
+    height: 590px;
+    width: 1225px;
+    margin: 0 auto;
+}
+.item-con img{
+    height: 590px;
+    width: 647px;
+    float: left;
+}
+#item .login{
+    width: 360px;
+    height: 455px;
+    float: right;
+    border: 2px solid #eef2f4;
+    margin-top: 65px;
+}
+#item .login h3{
+    padding-left: 24px;
+    padding-top: 24px;
+    font-size: 18px;
+}
+#item .login input{
+    margin-top: 35px;
+    margin-left: 24px;
+    height: 36px;
+    width: 310px;
+    text-indent: 35px;
+}
+.ipt1,.ipt2{
+    position: relative;
+
+}
+.ipt1 span{
+    position: absolute;
+    left: 25px;
+    top: 36px;
+    background: url(../imgs/images/QQ图片20200915212948_03.png) no-repeat 10px 10px;
+    width: 36px;
+    height: 36px;
+}
+.ipt2 span{
+    position: absolute;
+    left: 25px;
+    top: 36px;
+    background: url(../imgs/images/QQ图片20200915212948_06.png) no-repeat 10px 10px;
+    width: 36px;
+    height: 36px;
+}
+.item-con .verification{
+    height: 40px;
+    width: 120px;
+    border: 1px solid #000;
+    float: right;
+    margin-top: 35px;
+    margin-right: 24px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.item-con .login a{
+    font-size: 12px;
+    float: right;
+    margin-right: 24px;
+    margin-top: 35px;
+}
+.item-con .login #btn{
+    width: 310px;
+    height: 45px;
+    background-color: #ff2832;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 90px;
+    clear: both;
+}

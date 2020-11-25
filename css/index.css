@@ -1,0 +1,400 @@
+#banner{
+    width: 100%;
+    height: 916px;
+}
+.banner-con{
+    height: 916px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.banner-con .banner-left{
+    margin-right: 10px;
+    float: left;
+    position: relative;
+}
+.banner-con .banner-left .menu{
+    width: 190px;
+}
+.banner-con .banner-left .menu .menu-head{
+    height: 35px;
+    width: 190px;
+    text-align: center;
+    font-size: 18px;
+    background: #487a6f;
+    border-radius: 4px 4px 0 0;
+    line-height: 34px;
+    color: #fff;
+}
+.banner-con .banner-left .menu .menu-body{
+    width: 190px;
+    border-top: 2px dotted #487a6f;
+    border-bottom: 1px solid #487a6f;
+    position: relative;
+    height: 878px;
+    background: url(../imgs/sidemenu_bg2.png) -20px 0px repeat-y;
+}
+.banner-con .banner-left .menu .menu-body .box{
+    width: 188px;
+    border: 1px solid #487a6f;
+    border-width: 0 1px;
+}
+.banner-con .banner-left .menu .menu-body .box .inner{
+    width: 170px;
+    border-bottom: 1px dotted #849555;
+    margin-left: 9px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 3px;
+    padding-bottom: 2px;
+}
+.banner-con .banner-left .menu .menu-body .box .inner dt span{
+    color: #487a6f;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    background: url(../imgs/sidemenu_bg2.png) 160px 8px no-repeat;
+    font-weight: bold;
+    display: block;
+}
+.banner-con .banner-left .menu .menu-body .box .inner dt span a{
+    color: #487a6f;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+}
+.banner-con .banner-left .menu .menu-body .box .inner dt  dd{
+    zoom: 1;
+    width: 178px;
+    padding-bottom: 3px;
+}
+.banner-con .banner-left .menu .menu-body .box .inner dd a{
+    font-size: 12px;
+    color: #666;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    padding-right: 5px;
+    white-space: nowrap;
+    background: url(../imgs/sidemenu_bg1.png) right center no-repeat;
+    margin-right: 5px;
+}
+.banner-con .banner-center{
+    width: 750px;
+    height: 916px;
+    margin-right: 10px;
+    float: left;
+}
+.banner-con .banner-center .RotationChart1{
+    width: 750px;
+    height: 315px;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.banner-con .banner-center .RotationChart1 ul{
+    position: absolute;
+    list-style: none;
+    bottom: 15px;
+    display: block;
+    right: 20px;
+}
+.banner-con .banner-center .RotationChart1 ul li{
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 10px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+.banner-con .banner-center .newBook{
+    width: 750px;
+    overflow: hidden;
+    position: relative;
+    height: 590px;
+    margin-top: 10px;
+    clear: both;
+}
+.banner-con .banner-center .newBook .newTitle{
+    background: url(../imgs/new_book.png) no-repeat;
+    height: 43px;
+    width: 750px;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+.banner-con .banner-center .newBook .RotationChart2{
+    margin-top: 10px;
+    width: 750px;
+    height: 530px;
+    /* background-color: rebeccapurple; */
+}
+.banner-con .banner-center .newBook .RotationChart2 ul{
+    width: 800px;
+    padding-top: 25px;
+    font-size: 12px;
+}
+.banner-con .banner-center .newBook .RotationChart2 ul li{
+    width: 150px;
+    margin-right: 47px;
+    margin-bottom: 16px;
+    height: 250px;
+    position: relative;
+    overflow: visible;
+    float: left;
+}
+.RotationChart2 ul li .imga{
+    width: 150px;
+    display: block;
+    height: 150px;
+}
+.RotationChart2 ul li a img{
+    width: 150px;
+    display: block;
+    height: 150px;
+}
+.RotationChart2 ul li .name{
+    padding: 7px 20px 0;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+}
+.RotationChart2 ul li .name a{
+    color: #000;
+    font-size: 12px;
+}
+.RotationChart2 ul li .author{
+    padding: 0 20px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    color: #aaa;
+}
+/* .RotationChart2 ul li .author span{
+    padding: 0 20px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    color: #aaa;
+} */
+.RotationChart2 ul li .price{
+    padding-left: 20px;
+    line-height: 16px;
+    overflow: hidden;
+    font-family: "Arial";
+    font-size: 14px;
+    position: relative;
+    height: 36px;
+}
+.RotationChart2 ul li .price span{
+    color: #c30;
+    float: left;
+    overflow: hidden;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+/* 这里 */
+.banner-con .banner-right{
+    float: left;
+}
+.banner-con .banner-right .newStar{
+    border: 1px solid #eaeaea;
+    padding: 6px 10px;
+    width: 218px;
+    margin-bottom: 10px;
+}
+.banner-con .banner-right .newStar .top-title{
+    height: 28px;
+}
+.banner-con .banner-right h2{
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+.banner-con .banner-right .newStar ul{
+    position: relative;
+    overflow: hidden;
+    height: 68px;
+}
+.banner-con .banner-right .newStar ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: 0;
+}
+.banner-con .banner-right .newStar ul li a{
+    display: block;
+    height: 22px;
+    position: relative;
+    overflow: hidden;
+    padding-left: 7px;
+    background: url(../imgs/sprite.png) -16px -160px no-repeat;
+    line-height: 22px;
+    font-size: 12px;
+}
+.banner-con .banner-right a{
+    color: #000;
+}
+.banner-con .banner-right a:hover{
+    text-decoration: underline;
+    color: orange;
+}
+.banner-con .banner-right .presale{
+    border: 1px solid #eaeaea;
+    padding: 6px 0 0;
+    width: 238px;
+    height: 187px;
+    position: relative;
+    margin-bottom: 9px;
+    overflow: hidden;
+}
+.banner-con .banner-right .presale .center-title{
+    height: 25px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.banner-con .banner-right .presale  .RotationChart3{
+    width: 238px;
+    height: 170px;
+}
+.banner-con .banner-right .hot{
+    clear: both;
+    width: 240px;
+}
+.banner-con .banner-right .hot .hot-title{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 34px;
+    color: #000;
+    background: url(../imgs/sprite.png) 5px 4px no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.banner-con .banner-right .hot .hot-title a{
+    color: #d72832;
+    font-weight: bold;
+}
+.banner-con .banner-right .hot .hot-list{
+    clear: both;
+}
+.banner-con .banner-right .hot .hot-list p{
+    overflow: hidden;
+}
+.banner-con .banner-right .hot .hot-list .list-head ul{
+    height: 25px;
+}
+.banner-con .banner-right .hot .hot-list .list-head ul li{
+    float: left;
+    width: 48px;
+}
+.banner-con .banner-right .hot .hot-list .list-head ul li span{
+    display: block;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #eaeaea;
+    border-left: 0;
+    padding: 2px 0 1px;
+    color: #000;
+    cursor: pointer;
+    font-size: 12px;
+}
+.banner-con .banner-right .hot .hot-list .hot-con{
+    border: 1px solid #eaeaea;
+    padding-top: 3px;
+    position: relative;
+    height: 518px;
+    padding-top: 5px;
+}
+.banner-con .banner-right .hot .hot-list .hot-con ul{
+    position: relative;
+    height: 480px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.banner-con .banner-right .hot .hot-list .hot-con ul li{
+    line-height: 36px;
+    border-bottom: 1px dotted #d8d8d8;
+    width: 220px;
+    margin-left: 9px;
+    vertical-align: top;
+    overflow: hidden;
+}
+.hot .hot-list .hot-con ul li .num{
+    color: #d10000;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    /* position: absolute; */
+    padding-left: 8px;
+    padding-top: 6px;
+    float: left;
+    /* z-index: 2; */
+
+}
+.hot .hot-list .hot-con ul li img{
+    float: left;
+    width: 120px;
+    height: 120px;
+    padding-left: 10px;
+    padding-top: 11px;
+}
+.hot .hot-list .hot-con ul li .name{
+    height: 44px;
+    width: 60px;
+    line-height: 22px;
+    overflow: hidden;
+    padding-top: 11px;
+    /* margin-left: 145px; */
+    float: left;
+}
+.hot .hot-list .hot-con ul li .price{
+    width: 60px;
+    height: 37px;
+    font-size: 14px;
+    line-height: 20px;
+    float: left;
+    margin-top: 5px;
+
+}
+.hot .hot-list .hot-con ul li .price span{
+    display: inline-block;
+    color: #c30000;
+    line-height: 20px;
+    height: 20px;
+    display: block;
+    font-weight: bold;
+}
+.hot .hot-list .hot-con ul li .price del{
+    margin-top: 3px;
+    color: #a7a7a7;
+    text-decoration: line-through;
+    line-height: 18px;
+    height: 18px;
+}
+.hot .hot-list .hot-con ul li .link{
+    float: left;
+    color: #487a6f;
+    width: 60px;
+    height: 36px;
+    overflow: hidden;
+}
+.banner-con .banner-right .hot .hot-list .hot-con .totle{
+    color: #5097bc;
+    width: 225px;
+    background: #fff;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    bottom: 1px;
+    left: 5px;
+    text-align: right;
+    font-size: 12px;
+}

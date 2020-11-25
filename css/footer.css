@@ -1,0 +1,109 @@
+/* footer */
+#footer{
+    border-top: 2px solid #ff2832;
+    margin-top: 15px;
+    background-color: #fff;
+}
+#footer .footer-top{
+    background-color: #fafafa;
+    border-bottom: 1px solid #ebebeb;
+    width: 100%;
+    min-width: 960px;
+}
+#footer .footer-top div{
+    width: 940px;
+    margin: 0 auto;
+    height: 68px;
+    padding: 5px 0 5px 30px;
+}
+#footer .footer-top div a{
+    display: block;
+    height: 52px;
+    width: 187px;
+    float: left;
+    padding: 7px 0 7px 48px;
+}
+#footer .footer-top div a span{
+    text-indent: -9999px;
+    display: block;
+    width: 138px;
+    height: 52px;
+    font-size: 0;
+    line-height: 0;
+    cursor: pointer;
+}
+#footer .footer-top div a:nth-of-type(1) span{
+    background: url(../imgs/footer_bg.png) 0 0 no-repeat;
+}
+#footer .footer-top div a:nth-of-type(2) span{
+    background: url(../imgs/footer_bg.png) 0 -52px no-repeat;
+}
+#footer .footer-top div a:nth-of-type(3) span{
+    background: url(../imgs/footer_bg.png) 0 -104px no-repeat;
+}
+#footer .footer-top div a:nth-of-type(4) span{
+    background: url(../imgs/footer_bg.png) 0 -156px no-repeat;
+}
+
+#footer .footer-middle{
+    width: 920px;
+    height: 140px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+#footer .footer-middle div{
+    width: 158px;
+    float: left;
+    text-align: center;
+}
+#footer .footer-middle div span{
+    display: block;
+    padding-left: 35px;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    color: #323232;
+    height: 36px;
+    line-height: 36px;
+}
+#footer .footer-middle div ul{
+    padding-left: 35px;
+    list-style: none;
+    margin: 0;
+}
+#footer .footer-middle div ul li{
+    line-height: 20px;
+    height: 20px;
+}
+#footer .footer-middle div ul li a{
+    text-decoration: none;
+    color: #7d7d7d;
+    font-size: 12px;
+}
+#footer .footer-bottom{
+    color: #8c8c8c;
+    font-size: 12px;
+    text-decoration: none;
+    border-top: 1px solid #ebebeb;
+    width: 100%;
+    min-width: 960px;
+    padding: 17px 0 50px;
+}
+#footer .footer-bottom .footer-nav{
+    text-align: center;
+    line-height: 20px;
+    padding-bottom: 17px;
+}
+#footer .footer-bottom .footer-nav a{
+    color: #8c8c8c;
+    font-size: 12px;
+    text-decoration: none;
+}
+#footer .footer-bottom .footer-nav span{
+    margin: 0 17px 0 19px;
+}
+#footer .footer-foot{
+    line-height: 20px;
+    text-align: center;
+    width: 960px;
+    margin: 0 auto;
+}

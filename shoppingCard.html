@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/shoppingCard.css">
+</head>
+
+<body>
+    <div id="head">
+        <div class="tools">
+            <div class="tools-con">
+                <ul>
+                    <li class="card"><a href="#">
+                            <i></i>
+                            购物车
+                            <b>1</b>
+                        </a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">小说投稿</a></li>
+                    <li class="phone"><a href="#">
+                        <i></i>
+                        手机当当
+                        
+                    </a></li>
+                    <li class="my_dd"><a href="#">我的当当</a></li>
+                    <li class="zero"><a href="#">企业采购</a></li>
+                    <li class="user"><a href="#">客户服务</a></li>
+                </ul>
+                <div>
+                    <span>
+                        欢迎光临当当，请
+                        <a href="./logIn.html">登录</a>
+                        <a href="./reg.html">注册</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <img src="http://img63.ddimg.cn/2020/9/23/2020092317532864146.jpg" alt="">
+        </div>
+        <div class="logo">
+            <div class="logo-con">
+                <div class="shop_produce">
+                    <span class="current">我的购物车</span>
+                    <span>填写订单</span>
+                    <span>完成订单</span>
+                </div>
+                <div class="shop-logo">
+                    <img src="http://shopping.dangdang.com/shoppingcart/images/dd_logo.jpg?v=20181226" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="address_line">
+        <div class="address_con">
+            <div class="address">
+                <span class="icon">&nbsp;</span>
+                <span>配送地址</span>
+                <div>
+                    <span>深圳</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="item">
+        <ul>
+            <li class="li1">s
+                选择
+            </li>
+            <li class="li2">商品信息</li>
+            <li class="li3">单价（元）</li>
+            <li class="li4">数量</li>
+            <li class="li4">金额（元）</li>
+            <li class="li5">操作</li>
+        </ul>
+        <div class="shoppingList">
+        </div>
+    </div>
+    <div id="settlement">
+        <div class="settlement">
+            <a href="javascript:void(0)">结&nbsp;&nbsp;算</a>
+        </div>
+    </div>
+
+    <iframe src="./footer.html" frameborder="0" width="100%" height="450px"></iframe>
+
+    <script type="module">
+        import shoppingCard from "./js/shoppingCard.js"
+        import Ajax from "./js/Ajax.js"
+
+        init();
+        function init(){
+            document.addEventListener("addGoods",shoppingRender);
+            document.addEventListener("shoppingList",shoppingRender);
+            document.addEventListener("changeGoodsNum",shoppingRender);
+            document.addEventListener("deleteGoods",shoppingRender);
+            document.addEventListener("selectGoods",shoppingRender);
+
+            if(location.search.indexOf("?")>-1){
+                var id=location.search.split("?")[1].split("=")[1];
+                Ajax.post("http://192.168.43.155:4001/addGoods",{id:id});
+            }else{
+                Ajax.post("http://192.168.43.155:4001/shoppingList");
+            }
+
+            totalprice();
+        }
+        function shoppingRender(e){
+            new shoppingCard(e.data);
+        }
+
+        function totalprice(){
+            var item = document.querySelector("#item");
+            var children = item.children[1]
+            console.log(children.length)
+        }
+    </script>
+</body>
+
+</html>

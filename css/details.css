@@ -1,0 +1,293 @@
+
+.nav{
+    width: 1200px;
+    color: #646464;
+    font: 12px/40px simsun;
+    height: 40px;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    position: relative;
+    z-index: 10000;
+}
+.nav a{
+    color: #646464;
+    float: left;
+}
+.nav span{
+    color: #323232;
+    float: left;
+}
+#item{
+    width: 1200px;
+    height: 431px;
+    margin: 0 auto;
+}
+#item .left{
+    float: left;
+    width: 320px;
+    padding: 0 20px 30px 0;
+}
+#item .magnifier{
+    position: relative;
+}
+#item .magnifier .active{
+    border: 1px solid red;
+}
+#item .magnifier .big{
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 7777;
+}
+#item .magnifier .big .focus{
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    background: url(http://product.dangdang.com/images/zoom_pup.png);
+}
+#item .magnifier .big img{
+    display: block;
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+}
+#item .magnifier .small{
+    visibility: visible;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    left: 0px;
+    width: 295px;
+    margin: 8px auto 0;
+}
+#item .magnifier .small ul{
+    z-index: 1;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    list-style: none;
+    width: 1180px;
+}
+#item .magnifier .small ul li{
+    overflow: hidden;
+    margin-left: 3px;
+    float: left;
+    width: 56px;
+    height: 56px;
+}
+#item .magnifier .small ul li img{
+    display: block;
+    border: 1px solid #fff;
+    width: 54px;
+    height: 54px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#item .magnifier .scale{
+    border: 1px solid #f5f5f5;
+    position: absolute;
+    left: 320px;
+    top: 0;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    display: none;
+    background: #fff;
+    text-align: center;
+    z-index: 9999;
+}
+#item .magnifier .scale img{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+#item .right{
+    float: left;
+    width: 860px;
+    font: 12px Verdana,Simsun;
+    color: #646464;
+}
+#item .right .rigth-con{
+    line-height: 24px;
+    padding: 0 0 0 10px;
+    margin-top: 5px;
+}
+#item .right .rigth-con .right-l{
+    width: 630px;
+    float: left;
+}
+#item .right .rigth-con .right-l .title{
+    font-family: Verdana,"Microsoft Yahei";
+    font-weight: 400;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 0 6px 12px 0;
+}
+#item .right .rigth-con .right-l .title h1{
+    line-height: 24px;
+    max-height: 48px;
+    overflow: hidden;
+    color: #323232;
+    font-size: 18px;
+    margin: 0 auto;
+}
+#item .right .rigth-con .right-l .title h2{
+    padding-top: 6px;
+    max-height: 96px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 24px;
+}
+#item .right .rigth-con .right-l .title h2 span:nth-of-type(1){
+    color: #323232;
+}#item .right .rigth-con .right-l .title h2 span:nth-of-type(2){
+    color: #1a66b3;
+}
+#item .right .rigth-con .right-l .information span{
+    display: inline-block;
+    padding-right: 25px;
+}
+#item .right .rigth-con .right-l .price{
+    width: 640px;
+    height: 143px;
+    background-color: #fcfaf7;
+    padding: 0 0 0 10px;
+    margin: 6px 0 0 -10px;
+    line-height: 24px;
+    position: relative;
+    width: 630px;
+    z-index: 6666;
+}
+#item .right .rigth-con .right-l .price .price-l{
+    float: left;
+    padding-bottom: 0;
+}
+#item .right .rigth-con .right-l .price .price-l .discount{
+    width: 206px;
+    height: 64px;
+}
+#item .right .rigth-con .right-l .price .price-l .discount .box1{
+    font-size: 26px;
+    color: #e52222;
+    display: inline-block;
+}
+#item .right .rigth-con .right-l .price .price-l .discount .box1 p:nth-of-type(1){
+    color: #8f8f8f;
+    font-weight: 400!important;
+    font-size: 12px!important;
+}
+#item .right .rigth-con .right-l .price .price-l .discount .box2{
+    color: #e52222;
+    height: 49px;
+    display: inline-block;
+    align-items: flex-end;
+    line-height: 1.5;
+    font-size: 13px;
+    margin-left: 15px;
+}
+#item .right .rigth-con .right-l .price .price-l .original{
+    width: 206px;
+    height: 35px;
+    color: #969696;
+}
+#item .right .rigth-con .price-r{
+    float: right;
+    width: 270px;
+    min-height: 100px;
+}
+#item .right .rigth-con .price-r .box{
+    width: 270px;
+    height: 143px;
+    background-image: url(https://img60.ddimg.cn/assets/pc_image/minaAttract-product-price.gif);
+}
+#item .right .rigth-con .price-r .box div{
+    float: right;
+    width: 118px;
+    height: 118px;
+    display: block;
+    border-radius: 5.6px;
+    margin-right: 10px;
+    margin-top: 11px;
+    padding: 2px;
+    background-color: #fff;
+}
+#item .right .rigth-con .price-r .box img{
+    width: 118px;
+    height: 118px;
+    display: inline-block;
+}
+#item .right .rigth-con .shopping{
+    padding: 30px 0 35px;
+}
+#item .right .rigth-con .shopping .num{
+    float: left;
+    height: 34px;
+    border: 1px solid #e9e9e9;
+    width: 38px;
+    padding-right: 23px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+#item .right .rigth-con .shopping .num input{
+    width: 38px!important;
+    height: 32px;
+    line-height: 32px;
+    border: 0;
+    background: #fff;
+    text-align: center;
+    color: #969696;
+    clear: both;
+    overflow: hidden;
+}
+#item .right .rigth-con .shopping .num a{
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 23px;
+    height: 17px;
+    background-image: url(http://product.dangdang.com/images/product_sprites.png);
+    background-repeat: no-repeat;
+    background-color: #646464;
+    margin-left: 6px;
+}
+#item .right .rigth-con .shopping .num a:nth-of-type(1){
+    background-position: -37px 0;
+    top: 0;
+}
+#item .right .rigth-con .shopping .num a:nth-of-type(2){
+    background-position: -37px -17px;
+    top: 17px;
+}
+#item .right .rigth-con .shopping .shop-card{
+    width: 145px;
+    height: 35px;
+    margin-left: 15px;
+    border-radius: 4px;
+    float: left;
+    background-color: #ff2832;
+}
+#item .right .rigth-con .shopping .shop-card a{
+    cursor: pointer;
+    height: 36px;
+    font: 16px/36px "Microsoft Yahei";
+    overflow: hidden;
+    margin: 0 0 3px 10px;
+    float: left;
+    padding: 0 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+}
+#card{
+    float: left;
+    width: 20px;
+    height: 19px;
+    background: url(http://product.dangdang.com/images/product_sprites.png) no-repeat -40px -35px;
+    margin: 9px 4px 0 0;
+}
